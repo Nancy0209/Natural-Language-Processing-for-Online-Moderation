@@ -1,0 +1,9 @@
+[INFO|modelcard.py:452] 2024-05-05 11:41:06,475 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Text Classification', 'type': 'text-classification'}}
+***** eval metrics *****
+  eval_accuracy           =     0.9029
+  eval_loss               =     0.3257
+  eval_runtime            = 0:00:05.05
+  eval_samples            =       2050
+  eval_samples_per_second =    405.888
+  eval_steps_per_second   =     50.885

@@ -1,0 +1,211 @@
+2024-05-05 11:40:57,766 INFO    StreamThr :1282158 [internal.py:wandb_internal():86] W&B internal server running at pid: 1282158, started at: 2024-05-05 11:40:57.766117
+2024-05-05 11:40:57,767 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: status
+2024-05-05 11:40:57,769 INFO    WriterThread:1282158 [datastore.py:open_for_write():87] open: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/run-dyqvsr5h.wandb
+2024-05-05 11:40:57,770 DEBUG   SenderThread:1282158 [sender.py:send():379] send: header
+2024-05-05 11:40:57,771 DEBUG   SenderThread:1282158 [sender.py:send():379] send: run
+2024-05-05 11:40:59,107 INFO    SenderThread:1282158 [dir_watcher.py:__init__():211] watching files in: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files
+2024-05-05 11:40:59,107 INFO    SenderThread:1282158 [sender.py:_start_run_threads():1124] run started: dyqvsr5h with start time 1714880457.765798
+2024-05-05 11:40:59,114 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: check_version
+2024-05-05 11:40:59,115 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: check_version
+2024-05-05 11:41:00,507 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: run_start
+2024-05-05 11:41:00,512 DEBUG   HandlerThread:1282158 [system_info.py:__init__():26] System info init
+2024-05-05 11:41:00,512 DEBUG   HandlerThread:1282158 [system_info.py:__init__():41] System info init done
+2024-05-05 11:41:00,512 INFO    HandlerThread:1282158 [system_monitor.py:start():194] Starting system monitor
+2024-05-05 11:41:00,512 INFO    SystemMonitor:1282158 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-05 11:41:00,512 INFO    HandlerThread:1282158 [system_monitor.py:probe():214] Collecting system info
+2024-05-05 11:41:00,513 INFO    SystemMonitor:1282158 [interfaces.py:start():190] Started cpu monitoring
+2024-05-05 11:41:00,513 INFO    SystemMonitor:1282158 [interfaces.py:start():190] Started disk monitoring
+2024-05-05 11:41:00,514 INFO    SystemMonitor:1282158 [interfaces.py:start():190] Started gpu monitoring
+2024-05-05 11:41:00,515 INFO    SystemMonitor:1282158 [interfaces.py:start():190] Started memory monitoring
+2024-05-05 11:41:00,515 INFO    SystemMonitor:1282158 [interfaces.py:start():190] Started network monitoring
+2024-05-05 11:41:00,646 DEBUG   HandlerThread:1282158 [system_info.py:probe():150] Probing system
+2024-05-05 11:41:00,650 DEBUG   HandlerThread:1282158 [gitlib.py:_init_repo():56] git repository is invalid
+2024-05-05 11:41:00,650 DEBUG   HandlerThread:1282158 [system_info.py:probe():198] Probing system done
+2024-05-05 11:41:00,650 DEBUG   HandlerThread:1282158 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-89-generic-x86_64-with-glibc2.35', 'python': '3.9.0', 'heartbeatAt': '2024-05-05T03:41:00.646238', 'startedAt': '2024-05-05T03:40:57.760676', 'docker': None, 'cuda': None, 'args': ('--model_name_or_path', '/data/kongrui/hate_speech_classification/ckpts', '--train_file', './data/train_labeled_data.csv', '--validation_file', './data/val_labeled_data.csv', '--shuffle_train_dataset', '--metric_name', 'accuracy', '--text_column_name', 'tweet', '--label_column_name', 'class', '--do_eval', '--max_seq_length', '128', '--per_device_train_batch_size', '8', '--learning_rate', '2e-5', '--num_train_epochs', '1', '--output_dir', 'ckpts/', '--overwrite_output_dir'), 'state': 'running', 'program': '/data/kongrui/hate_speech_classification/src/train.py', 'codePathLocal': 'src/train.py', 'codePath': 'src/train.py', 'host': 'aiot-a100', 'username': 'kongrui', 'executable': '/home/kongrui/.conda/envs/minillm/bin/python', 'cpu_count': 128, 'cpu_count_logical': 255, 'cpu_freq': {'current': 2276.1845098039216, 'min': 1500.0, 'max': 2250.0}, 'cpu_freq_per_core': [{'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3265.525, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3267.817, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3262.6, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3261.946, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3260.058, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3261.526, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3262.902, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3262.704, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}], 'disk': {'/': {'total': 877.6121253967285, 'used': 767.1964797973633}}, 'gpu': 'NVIDIA A100 80GB PCIe', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}], 'memory': {'total': 1007.6757125854492}}
+2024-05-05 11:41:00,651 INFO    HandlerThread:1282158 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-05 11:41:00,651 INFO    HandlerThread:1282158 [system_monitor.py:probe():227] Publishing system info
+2024-05-05 11:41:00,651 DEBUG   HandlerThread:1282158 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-05 11:41:01,109 INFO    Thread-12 :1282158 [dir_watcher.py:_on_file_created():271] file/dir created: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/conda-environment.yaml
+2024-05-05 11:41:06,108 INFO    Thread-12 :1282158 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/conda-environment.yaml
+2024-05-05 11:41:06,324 DEBUG   HandlerThread:1282158 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-05 11:41:06,326 INFO    HandlerThread:1282158 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-05 11:41:06,328 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:41:06,328 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-05 11:41:06,328 DEBUG   SenderThread:1282158 [sender.py:send():379] send: files
+2024-05-05 11:41:06,328 INFO    SenderThread:1282158 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-05 11:41:06,465 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-05 11:41:06,466 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: python_packages
+2024-05-05 11:41:06,468 DEBUG   SenderThread:1282158 [sender.py:send():379] send: telemetry
+2024-05-05 11:41:06,473 DEBUG   SenderThread:1282158 [sender.py:send():379] send: config
+2024-05-05 11:41:06,518 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-05 11:41:06,519 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-05 11:41:06,520 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-05 11:41:06,522 DEBUG   SenderThread:1282158 [sender.py:send():379] send: metric
+2024-05-05 11:41:06,522 DEBUG   SenderThread:1282158 [sender.py:send():379] send: telemetry
+2024-05-05 11:41:06,522 DEBUG   SenderThread:1282158 [sender.py:send():379] send: metric
+2024-05-05 11:41:06,523 WARNING SenderThread:1282158 [sender.py:send_metric():1341] Seen metric with glob (shouldn't happen)
+2024-05-05 11:41:06,523 DEBUG   SenderThread:1282158 [sender.py:send():379] send: telemetry
+2024-05-05 11:41:06,523 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: stop_status
+2024-05-05 11:41:07,109 INFO    Thread-12 :1282158 [dir_watcher.py:_on_file_created():271] file/dir created: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/requirements.txt
+2024-05-05 11:41:07,109 INFO    Thread-12 :1282158 [dir_watcher.py:_on_file_created():271] file/dir created: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/wandb-metadata.json
+2024-05-05 11:41:07,523 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:41:07,653 DEBUG   SenderThread:1282158 [sender.py:send():379] send: metric
+2024-05-05 11:41:07,653 DEBUG   SenderThread:1282158 [sender.py:send():379] send: metric
+2024-05-05 11:41:07,653 DEBUG   SenderThread:1282158 [sender.py:send():379] send: metric
+2024-05-05 11:41:07,653 DEBUG   SenderThread:1282158 [sender.py:send():379] send: metric
+2024-05-05 11:41:07,653 DEBUG   SenderThread:1282158 [sender.py:send():379] send: metric
+2024-05-05 11:41:07,653 DEBUG   SenderThread:1282158 [sender.py:send():379] send: history
+2024-05-05 11:41:07,653 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: summary_record
+2024-05-05 11:41:07,655 INFO    SenderThread:1282158 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-05 11:41:07,656 DEBUG   SenderThread:1282158 [sender.py:send():379] send: exit
+2024-05-05 11:41:07,656 INFO    SenderThread:1282158 [sender.py:send_exit():586] handling exit code: 0
+2024-05-05 11:41:07,656 INFO    SenderThread:1282158 [sender.py:send_exit():588] handling runtime: 6
+2024-05-05 11:41:07,670 INFO    SenderThread:1282158 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-05 11:41:07,670 INFO    SenderThread:1282158 [sender.py:send_exit():594] send defer
+2024-05-05 11:41:07,670 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:41:07,671 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:41:07,671 INFO    HandlerThread:1282158 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-05 11:41:07,671 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:41:07,671 INFO    SenderThread:1282158 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-05-05 11:41:07,671 INFO    SenderThread:1282158 [sender.py:transition_state():614] send defer: 1
+2024-05-05 11:41:07,671 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:41:07,671 INFO    HandlerThread:1282158 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-05 11:41:07,671 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:41:07,671 INFO    SenderThread:1282158 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-05-05 11:41:07,671 INFO    SenderThread:1282158 [sender.py:transition_state():614] send defer: 2
+2024-05-05 11:41:07,672 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:41:07,672 INFO    HandlerThread:1282158 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-05 11:41:07,672 INFO    HandlerThread:1282158 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-05 11:41:07,672 DEBUG   SystemMonitor:1282158 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-05 11:41:07,673 INFO    HandlerThread:1282158 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-05 11:41:07,673 DEBUG   SystemMonitor:1282158 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-05 11:41:07,673 INFO    HandlerThread:1282158 [interfaces.py:finish():202] Joined disk monitor
+2024-05-05 11:41:07,673 DEBUG   SystemMonitor:1282158 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-05 11:41:08,109 INFO    Thread-12 :1282158 [dir_watcher.py:_on_file_created():271] file/dir created: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/output.log
+2024-05-05 11:41:08,109 INFO    Thread-12 :1282158 [dir_watcher.py:_on_file_created():271] file/dir created: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/wandb-summary.json
+2024-05-05 11:41:08,111 INFO    wandb-upload_0:1282158 [upload_job.py:push():131] Uploaded file /tmp/tmpstc4r1sswandb/11i0y2gc-wandb-metadata.json
+2024-05-05 11:41:10,110 INFO    Thread-12 :1282158 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/output.log
+2024-05-05 11:41:10,725 INFO    HandlerThread:1282158 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-05 11:41:10,725 INFO    HandlerThread:1282158 [interfaces.py:finish():202] Joined memory monitor
+2024-05-05 11:41:10,725 INFO    HandlerThread:1282158 [interfaces.py:finish():202] Joined network monitor
+2024-05-05 11:41:10,725 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:41:10,726 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:41:10,726 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:41:10,726 INFO    SenderThread:1282158 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-05-05 11:41:10,726 INFO    SenderThread:1282158 [sender.py:transition_state():614] send defer: 3
+2024-05-05 11:41:10,727 DEBUG   SenderThread:1282158 [sender.py:send():379] send: stats
+2024-05-05 11:41:10,727 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:41:10,728 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:41:10,728 INFO    HandlerThread:1282158 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-05 11:41:10,728 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:41:10,728 INFO    SenderThread:1282158 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-05-05 11:41:10,728 INFO    SenderThread:1282158 [sender.py:transition_state():614] send defer: 4
+2024-05-05 11:41:10,728 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:41:10,728 INFO    HandlerThread:1282158 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-05 11:41:10,729 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:41:10,729 INFO    SenderThread:1282158 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-05-05 11:41:10,729 INFO    SenderThread:1282158 [sender.py:transition_state():614] send defer: 5
+2024-05-05 11:41:10,729 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:41:10,729 INFO    HandlerThread:1282158 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-05 11:41:10,729 DEBUG   SenderThread:1282158 [sender.py:send():379] send: summary
+2024-05-05 11:41:10,729 INFO    SenderThread:1282158 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-05 11:41:10,730 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:41:10,730 INFO    SenderThread:1282158 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-05-05 11:41:10,730 INFO    SenderThread:1282158 [sender.py:transition_state():614] send defer: 6
+2024-05-05 11:41:10,730 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:41:10,730 INFO    HandlerThread:1282158 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-05 11:41:10,730 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:41:10,730 INFO    SenderThread:1282158 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-05-05 11:41:10,734 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:41:11,110 INFO    Thread-12 :1282158 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/wandb-summary.json
+2024-05-05 11:41:11,150 INFO    SenderThread:1282158 [sender.py:transition_state():614] send defer: 7
+2024-05-05 11:41:11,151 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:41:11,151 INFO    HandlerThread:1282158 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-05 11:41:11,151 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:41:11,151 INFO    SenderThread:1282158 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-05-05 11:41:11,524 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:41:12,110 INFO    Thread-12 :1282158 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/config.yaml
+2024-05-05 11:41:13,665 INFO    SenderThread:1282158 [sender.py:transition_state():614] send defer: 8
+2024-05-05 11:41:13,665 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:41:13,665 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:41:13,665 INFO    HandlerThread:1282158 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-05 11:41:13,666 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:41:13,666 INFO    SenderThread:1282158 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-05-05 11:41:13,666 INFO    SenderThread:1282158 [job_builder.py:build():318] Attempting to build job artifact
+2024-05-05 11:41:13,667 INFO    SenderThread:1282158 [job_builder.py:_get_source_type():466] no source found
+2024-05-05 11:41:13,667 INFO    SenderThread:1282158 [sender.py:transition_state():614] send defer: 9
+2024-05-05 11:41:13,667 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:41:13,667 INFO    HandlerThread:1282158 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-05 11:41:13,668 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:41:13,668 INFO    SenderThread:1282158 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-05-05 11:41:13,668 INFO    SenderThread:1282158 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-05 11:41:14,111 INFO    SenderThread:1282158 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/output.log
+2024-05-05 11:41:14,111 INFO    SenderThread:1282158 [dir_watcher.py:finish():388] scan: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files
+2024-05-05 11:41:14,112 INFO    SenderThread:1282158 [dir_watcher.py:finish():402] scan save: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/output.log output.log
+2024-05-05 11:41:14,112 INFO    SenderThread:1282158 [dir_watcher.py:finish():402] scan save: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/requirements.txt requirements.txt
+2024-05-05 11:41:14,114 INFO    SenderThread:1282158 [dir_watcher.py:finish():402] scan save: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/conda-environment.yaml conda-environment.yaml
+2024-05-05 11:41:14,114 INFO    SenderThread:1282158 [dir_watcher.py:finish():402] scan save: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/config.yaml config.yaml
+2024-05-05 11:41:14,114 INFO    SenderThread:1282158 [dir_watcher.py:finish():402] scan save: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/wandb-metadata.json wandb-metadata.json
+2024-05-05 11:41:14,115 INFO    SenderThread:1282158 [dir_watcher.py:finish():402] scan save: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/wandb-summary.json wandb-summary.json
+2024-05-05 11:41:14,117 INFO    SenderThread:1282158 [sender.py:transition_state():614] send defer: 10
+2024-05-05 11:41:14,119 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:41:14,121 INFO    HandlerThread:1282158 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-05 11:41:14,124 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:41:14,124 INFO    SenderThread:1282158 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-05-05 11:41:14,124 INFO    SenderThread:1282158 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-05 11:41:14,525 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:41:14,525 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:41:14,676 INFO    wandb-upload_0:1282158 [upload_job.py:push():131] Uploaded file /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/output.log
+2024-05-05 11:41:15,498 INFO    wandb-upload_1:1282158 [upload_job.py:push():131] Uploaded file /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/requirements.txt
+2024-05-05 11:41:15,526 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:41:15,526 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:41:15,551 INFO    wandb-upload_2:1282158 [upload_job.py:push():131] Uploaded file /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/conda-environment.yaml
+2024-05-05 11:41:16,345 INFO    wandb-upload_3:1282158 [upload_job.py:push():131] Uploaded file /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/config.yaml
+2024-05-05 11:41:16,403 INFO    wandb-upload_4:1282158 [upload_job.py:push():131] Uploaded file /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/files/wandb-summary.json
+2024-05-05 11:41:16,527 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:41:16,527 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:41:16,603 INFO    Thread-11 :1282158 [sender.py:transition_state():614] send defer: 11
+2024-05-05 11:41:16,603 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:41:16,603 INFO    HandlerThread:1282158 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-05 11:41:16,603 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:41:16,604 INFO    SenderThread:1282158 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-05-05 11:41:16,604 INFO    SenderThread:1282158 [file_pusher.py:join():178] waiting for file pusher
+2024-05-05 11:41:16,604 INFO    SenderThread:1282158 [sender.py:transition_state():614] send defer: 12
+2024-05-05 11:41:16,604 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:41:16,604 INFO    HandlerThread:1282158 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-05 11:41:16,604 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:41:16,604 INFO    SenderThread:1282158 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-05-05 11:41:16,604 INFO    SenderThread:1282158 [file_stream.py:finish():614] file stream finish called
+2024-05-05 11:41:17,527 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:41:18,376 INFO    SenderThread:1282158 [file_stream.py:finish():618] file stream finish is done
+2024-05-05 11:41:18,376 INFO    SenderThread:1282158 [sender.py:transition_state():614] send defer: 13
+2024-05-05 11:41:18,376 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:41:18,377 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:41:18,377 INFO    HandlerThread:1282158 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-05 11:41:18,377 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:41:18,377 INFO    SenderThread:1282158 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-05-05 11:41:18,377 INFO    SenderThread:1282158 [sender.py:transition_state():614] send defer: 14
+2024-05-05 11:41:18,378 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:41:18,378 DEBUG   SenderThread:1282158 [sender.py:send():379] send: final
+2024-05-05 11:41:18,378 INFO    HandlerThread:1282158 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-05 11:41:18,378 DEBUG   SenderThread:1282158 [sender.py:send():379] send: footer
+2024-05-05 11:41:18,378 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:41:18,378 INFO    SenderThread:1282158 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-05-05 11:41:18,379 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:41:18,379 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:41:18,379 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:41:18,379 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:41:18,380 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: server_info
+2024-05-05 11:41:18,380 DEBUG   SenderThread:1282158 [sender.py:send_request():406] send_request: server_info
+2024-05-05 11:41:18,382 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-05 11:41:18,382 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-05 11:41:18,382 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-05 11:41:18,629 INFO    MainThread:1282158 [wandb_run.py:_footer_history_summary_info():3920] rendering history
+2024-05-05 11:41:18,629 INFO    MainThread:1282158 [wandb_run.py:_footer_history_summary_info():3952] rendering summary
+2024-05-05 11:41:18,629 INFO    MainThread:1282158 [wandb_run.py:_footer_sync_info():3879] logging synced files
+2024-05-05 11:41:18,630 DEBUG   HandlerThread:1282158 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-05 11:41:18,630 INFO    HandlerThread:1282158 [handler.py:finish():866] shutting down handler
+2024-05-05 11:41:19,380 INFO    WriterThread:1282158 [datastore.py:close():296] close: /data/kongrui/hate_speech_classification/wandb/run-20240505_114057-dyqvsr5h/run-dyqvsr5h.wandb
+2024-05-05 11:41:19,628 INFO    SenderThread:1282158 [sender.py:finish():1546] shutting down sender
+2024-05-05 11:41:19,629 INFO    SenderThread:1282158 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-05 11:41:19,629 INFO    SenderThread:1282158 [file_pusher.py:join():178] waiting for file pusher

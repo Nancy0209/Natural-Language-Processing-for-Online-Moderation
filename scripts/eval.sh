@@ -1,0 +1,15 @@
+CUDA_VISIBLE_DEVICES=4 python src/train.py \
+    --model_name_or_path  $(pwd)/ckpts \
+    --train_file ./data/train_labeled_data.csv \
+    --validation_file ./data/val_labeled_data.csv \
+    --shuffle_train_dataset \
+    --metric_name accuracy \
+    --text_column_name "tweet" \
+    --label_column_name class \
+    --do_eval \
+    --max_seq_length 128 \
+    --per_device_train_batch_size 8 \
+    --learning_rate 2e-5 \
+    --num_train_epochs  1 \
+    --output_dir ckpts/ \
+    --overwrite_output_dir

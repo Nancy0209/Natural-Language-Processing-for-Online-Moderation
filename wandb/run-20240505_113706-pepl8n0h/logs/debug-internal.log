@@ -1,0 +1,383 @@
+2024-05-05 11:37:06,695 INFO    StreamThr :1276703 [internal.py:wandb_internal():86] W&B internal server running at pid: 1276703, started at: 2024-05-05 11:37:06.694592
+2024-05-05 11:37:06,696 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status
+2024-05-05 11:37:06,698 INFO    WriterThread:1276703 [datastore.py:open_for_write():87] open: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/run-pepl8n0h.wandb
+2024-05-05 11:37:06,699 DEBUG   SenderThread:1276703 [sender.py:send():379] send: header
+2024-05-05 11:37:06,699 DEBUG   SenderThread:1276703 [sender.py:send():379] send: run
+2024-05-05 11:37:08,048 INFO    SenderThread:1276703 [dir_watcher.py:__init__():211] watching files in: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files
+2024-05-05 11:37:08,048 INFO    SenderThread:1276703 [sender.py:_start_run_threads():1124] run started: pepl8n0h with start time 1714880226.694488
+2024-05-05 11:37:08,054 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: check_version
+2024-05-05 11:37:08,055 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: check_version
+2024-05-05 11:37:09,394 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: run_start
+2024-05-05 11:37:09,400 DEBUG   HandlerThread:1276703 [system_info.py:__init__():26] System info init
+2024-05-05 11:37:09,400 DEBUG   HandlerThread:1276703 [system_info.py:__init__():41] System info init done
+2024-05-05 11:37:09,400 INFO    HandlerThread:1276703 [system_monitor.py:start():194] Starting system monitor
+2024-05-05 11:37:09,400 INFO    SystemMonitor:1276703 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-05 11:37:09,400 INFO    HandlerThread:1276703 [system_monitor.py:probe():214] Collecting system info
+2024-05-05 11:37:09,401 INFO    SystemMonitor:1276703 [interfaces.py:start():190] Started cpu monitoring
+2024-05-05 11:37:09,401 INFO    SystemMonitor:1276703 [interfaces.py:start():190] Started disk monitoring
+2024-05-05 11:37:09,402 INFO    SystemMonitor:1276703 [interfaces.py:start():190] Started gpu monitoring
+2024-05-05 11:37:09,403 INFO    SystemMonitor:1276703 [interfaces.py:start():190] Started memory monitoring
+2024-05-05 11:37:09,403 INFO    SystemMonitor:1276703 [interfaces.py:start():190] Started network monitoring
+2024-05-05 11:37:09,540 DEBUG   HandlerThread:1276703 [system_info.py:probe():150] Probing system
+2024-05-05 11:37:09,550 DEBUG   HandlerThread:1276703 [gitlib.py:_init_repo():56] git repository is invalid
+2024-05-05 11:37:09,550 DEBUG   HandlerThread:1276703 [system_info.py:probe():198] Probing system done
+2024-05-05 11:37:09,550 DEBUG   HandlerThread:1276703 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-89-generic-x86_64-with-glibc2.35', 'python': '3.9.0', 'heartbeatAt': '2024-05-05T03:37:09.540667', 'startedAt': '2024-05-05T03:37:06.688474', 'docker': None, 'cuda': None, 'args': ('--model_name_or_path', 'cardiffnlp/twitter-roberta-base-sentiment-latest', '--train_file', './data/train_labeled_data.csv', '--validation_file', './data/val_labeled_data.csv', '--shuffle_train_dataset', '--metric_name', 'accuracy', '--text_column_name', 'tweet', '--label_column_name', 'class', '--do_train', '--do_eval', '--max_seq_length', '128', '--per_device_train_batch_size', '8', '--learning_rate', '2e-5', '--num_train_epochs', '1', '--output_dir', 'ckpts/', '--overwrite_output_dir'), 'state': 'running', 'program': '/data/kongrui/hate_speech_classification/src/train.py', 'codePathLocal': 'src/train.py', 'codePath': 'src/train.py', 'host': 'aiot-a100', 'username': 'kongrui', 'executable': '/home/kongrui/.conda/envs/minillm/bin/python', 'cpu_count': 128, 'cpu_count_logical': 255, 'cpu_freq': {'current': 2280.767568627451, 'min': 1500.0, 'max': 2250.0}, 'cpu_freq_per_core': [{'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3267.847, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3268.037, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3268.312, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3256.827, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3267.523, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3266.52, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3267.492, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 3266.329, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}, {'current': 2250.0, 'min': 1500.0, 'max': 2250.0}], 'disk': {'/': {'total': 877.6121253967285, 'used': 767.1992721557617}}, 'gpu': 'NVIDIA A100 80GB PCIe', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}, {'name': 'NVIDIA A100 80GB PCIe', 'memory_total': 85899345920}], 'memory': {'total': 1007.6757125854492}}
+2024-05-05 11:37:09,550 INFO    HandlerThread:1276703 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-05 11:37:09,550 INFO    HandlerThread:1276703 [system_monitor.py:probe():227] Publishing system info
+2024-05-05 11:37:09,550 DEBUG   HandlerThread:1276703 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-05 11:37:10,050 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_created():271] file/dir created: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/conda-environment.yaml
+2024-05-05 11:37:16,327 DEBUG   HandlerThread:1276703 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-05 11:37:16,329 INFO    HandlerThread:1276703 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-05 11:37:16,362 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:37:16,362 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-05 11:37:16,363 DEBUG   SenderThread:1276703 [sender.py:send():379] send: files
+2024-05-05 11:37:16,363 INFO    SenderThread:1276703 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-05 11:37:16,500 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-05 11:37:16,501 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: python_packages
+2024-05-05 11:37:16,501 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-05 11:37:16,502 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: stop_status
+2024-05-05 11:37:16,504 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-05 11:37:17,050 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/conda-environment.yaml
+2024-05-05 11:37:17,051 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_created():271] file/dir created: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/wandb-metadata.json
+2024-05-05 11:37:17,051 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_created():271] file/dir created: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/requirements.txt
+2024-05-05 11:37:17,534 DEBUG   SenderThread:1276703 [sender.py:send():379] send: telemetry
+2024-05-05 11:37:17,535 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:37:17,535 DEBUG   SenderThread:1276703 [sender.py:send():379] send: config
+2024-05-05 11:37:17,536 DEBUG   SenderThread:1276703 [sender.py:send():379] send: metric
+2024-05-05 11:37:17,536 DEBUG   SenderThread:1276703 [sender.py:send():379] send: telemetry
+2024-05-05 11:37:17,536 DEBUG   SenderThread:1276703 [sender.py:send():379] send: metric
+2024-05-05 11:37:17,536 WARNING SenderThread:1276703 [sender.py:send_metric():1341] Seen metric with glob (shouldn't happen)
+2024-05-05 11:37:17,536 DEBUG   SenderThread:1276703 [sender.py:send():379] send: telemetry
+2024-05-05 11:37:18,051 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_created():271] file/dir created: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:18,248 INFO    wandb-upload_0:1276703 [upload_job.py:push():131] Uploaded file /tmp/tmpdvvllxy4wandb/hg2pbiy8-wandb-metadata.json
+2024-05-05 11:37:20,051 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:22,051 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:22,639 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:37:24,052 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:26,052 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:27,698 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:37:28,053 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:30,053 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:31,501 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-05 11:37:31,502 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: stop_status
+2024-05-05 11:37:31,503 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-05 11:37:32,053 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:32,756 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:37:34,054 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:36,054 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:37,817 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:37:38,055 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:39,055 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/config.yaml
+2024-05-05 11:37:40,055 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:42,056 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:43,317 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:37:44,057 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:45,249 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-05 11:37:45,250 DEBUG   SenderThread:1276703 [sender.py:send():379] send: metric
+2024-05-05 11:37:45,251 DEBUG   SenderThread:1276703 [sender.py:send():379] send: metric
+2024-05-05 11:37:45,251 DEBUG   SenderThread:1276703 [sender.py:send():379] send: metric
+2024-05-05 11:37:45,251 DEBUG   SenderThread:1276703 [sender.py:send():379] send: history
+2024-05-05 11:37:45,252 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: summary_record
+2024-05-05 11:37:45,252 INFO    SenderThread:1276703 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-05 11:37:46,057 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:46,057 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_created():271] file/dir created: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/wandb-summary.json
+2024-05-05 11:37:47,539 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-05 11:37:47,539 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-05 11:37:47,540 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: stop_status
+2024-05-05 11:37:48,058 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:48,790 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:37:50,058 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:53,862 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:37:54,059 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:56,060 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:58,061 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:37:58,925 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:38:00,062 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:02,062 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:02,538 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-05 11:38:02,538 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-05 11:38:02,538 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: stop_status
+2024-05-05 11:38:03,989 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:38:04,063 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:06,063 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:08,064 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:09,057 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:38:09,403 DEBUG   SystemMonitor:1276703 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-05 11:38:09,479 DEBUG   SenderThread:1276703 [sender.py:send():379] send: stats
+2024-05-05 11:38:10,064 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:10,065 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/config.yaml
+2024-05-05 11:38:12,065 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:14,066 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:14,560 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:38:16,066 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:17,538 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-05 11:38:17,539 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-05 11:38:17,539 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: stop_status
+2024-05-05 11:38:18,067 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:19,626 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:38:19,904 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-05 11:38:19,906 DEBUG   SenderThread:1276703 [sender.py:send():379] send: history
+2024-05-05 11:38:19,907 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: summary_record
+2024-05-05 11:38:19,923 INFO    SenderThread:1276703 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-05 11:38:20,068 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:20,068 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/wandb-summary.json
+2024-05-05 11:38:22,068 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:24,069 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:25,201 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:38:28,070 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:30,070 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:30,270 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:38:32,071 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:32,538 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-05 11:38:32,538 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-05 11:38:32,539 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: stop_status
+2024-05-05 11:38:34,071 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:35,349 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:38:36,072 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:38,072 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:39,414 DEBUG   SenderThread:1276703 [sender.py:send():379] send: stats
+2024-05-05 11:38:40,073 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:40,413 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:38:42,074 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:44,074 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:45,475 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:38:46,075 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:47,538 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-05 11:38:47,538 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-05 11:38:47,539 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: stop_status
+2024-05-05 11:38:48,075 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:50,076 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:50,537 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:38:52,076 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:54,077 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:54,338 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-05 11:38:54,339 DEBUG   SenderThread:1276703 [sender.py:send():379] send: history
+2024-05-05 11:38:54,340 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: summary_record
+2024-05-05 11:38:54,341 INFO    SenderThread:1276703 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-05 11:38:55,078 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/wandb-summary.json
+2024-05-05 11:38:55,875 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:38:56,078 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:38:58,079 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:00,079 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:00,939 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:39:02,080 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:02,541 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-05 11:39:02,541 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-05 11:39:02,541 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: stop_status
+2024-05-05 11:39:04,080 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:06,016 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:39:06,081 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:08,081 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:09,416 DEBUG   SenderThread:1276703 [sender.py:send():379] send: stats
+2024-05-05 11:39:10,082 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:11,093 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:39:12,082 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:14,083 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:16,083 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:16,152 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:39:17,540 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-05 11:39:17,540 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-05 11:39:17,541 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: stop_status
+2024-05-05 11:39:18,084 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:20,085 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:21,212 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:39:22,086 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:23,582 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-05 11:39:23,583 DEBUG   SenderThread:1276703 [sender.py:send():379] send: history
+2024-05-05 11:39:23,583 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: summary_record
+2024-05-05 11:39:23,584 INFO    SenderThread:1276703 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-05 11:39:24,086 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:24,087 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/wandb-summary.json
+2024-05-05 11:39:26,087 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:26,309 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:39:28,088 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:30,088 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:31,370 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:39:32,089 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:32,540 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-05 11:39:32,541 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-05 11:39:32,541 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: stop_status
+2024-05-05 11:39:34,090 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:36,090 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:36,427 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:39:38,091 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:39,420 DEBUG   SenderThread:1276703 [sender.py:send():379] send: stats
+2024-05-05 11:39:40,092 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:41,493 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:39:42,093 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:42,139 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-05 11:39:42,141 DEBUG   SenderThread:1276703 [sender.py:send():379] send: metric
+2024-05-05 11:39:42,141 DEBUG   SenderThread:1276703 [sender.py:send():379] send: metric
+2024-05-05 11:39:42,141 DEBUG   SenderThread:1276703 [sender.py:send():379] send: metric
+2024-05-05 11:39:42,142 DEBUG   SenderThread:1276703 [sender.py:send():379] send: metric
+2024-05-05 11:39:42,142 DEBUG   SenderThread:1276703 [sender.py:send():379] send: metric
+2024-05-05 11:39:42,142 DEBUG   SenderThread:1276703 [sender.py:send():379] send: history
+2024-05-05 11:39:42,142 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: summary_record
+2024-05-05 11:39:42,159 INFO    SenderThread:1276703 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-05 11:39:43,093 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/wandb-summary.json
+2024-05-05 11:39:44,093 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:46,094 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:46,536 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:39:46,968 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-05 11:39:46,969 DEBUG   SenderThread:1276703 [sender.py:send():379] send: metric
+2024-05-05 11:39:46,970 DEBUG   SenderThread:1276703 [sender.py:send():379] send: metric
+2024-05-05 11:39:46,970 DEBUG   SenderThread:1276703 [sender.py:send():379] send: metric
+2024-05-05 11:39:46,971 DEBUG   SenderThread:1276703 [sender.py:send():379] send: metric
+2024-05-05 11:39:46,971 DEBUG   SenderThread:1276703 [sender.py:send():379] send: metric
+2024-05-05 11:39:46,971 DEBUG   SenderThread:1276703 [sender.py:send():379] send: history
+2024-05-05 11:39:46,971 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: summary_record
+2024-05-05 11:39:46,972 INFO    SenderThread:1276703 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-05 11:39:47,095 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/wandb-summary.json
+2024-05-05 11:39:47,540 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-05 11:39:47,540 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-05 11:39:47,541 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: stop_status
+2024-05-05 11:39:48,095 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:48,408 DEBUG   SenderThread:1276703 [sender.py:send():379] send: exit
+2024-05-05 11:39:48,409 INFO    SenderThread:1276703 [sender.py:send_exit():586] handling exit code: 0
+2024-05-05 11:39:48,409 INFO    SenderThread:1276703 [sender.py:send_exit():588] handling runtime: 158
+2024-05-05 11:39:48,409 INFO    SenderThread:1276703 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-05 11:39:48,410 INFO    SenderThread:1276703 [sender.py:send_exit():594] send defer
+2024-05-05 11:39:48,410 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:39:48,410 INFO    HandlerThread:1276703 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-05 11:39:48,410 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:39:48,410 INFO    SenderThread:1276703 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-05-05 11:39:48,411 INFO    SenderThread:1276703 [sender.py:transition_state():614] send defer: 1
+2024-05-05 11:39:48,411 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:39:48,411 INFO    HandlerThread:1276703 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-05 11:39:48,411 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:39:48,411 INFO    SenderThread:1276703 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-05-05 11:39:48,411 INFO    SenderThread:1276703 [sender.py:transition_state():614] send defer: 2
+2024-05-05 11:39:48,411 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:39:48,411 INFO    HandlerThread:1276703 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-05 11:39:48,411 INFO    HandlerThread:1276703 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-05 11:39:48,411 DEBUG   SystemMonitor:1276703 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-05 11:39:48,413 INFO    HandlerThread:1276703 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-05 11:39:48,413 DEBUG   SystemMonitor:1276703 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-05 11:39:48,413 INFO    HandlerThread:1276703 [interfaces.py:finish():202] Joined disk monitor
+2024-05-05 11:39:49,095 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/wandb-summary.json
+2024-05-05 11:39:50,096 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:51,561 INFO    HandlerThread:1276703 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-05 11:39:51,561 INFO    HandlerThread:1276703 [interfaces.py:finish():202] Joined memory monitor
+2024-05-05 11:39:51,561 INFO    HandlerThread:1276703 [interfaces.py:finish():202] Joined network monitor
+2024-05-05 11:39:51,562 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:39:51,563 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:39:51,563 INFO    SenderThread:1276703 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-05-05 11:39:51,563 INFO    SenderThread:1276703 [sender.py:transition_state():614] send defer: 3
+2024-05-05 11:39:51,563 DEBUG   SenderThread:1276703 [sender.py:send():379] send: stats
+2024-05-05 11:39:51,563 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:39:51,565 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:39:51,565 INFO    HandlerThread:1276703 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-05 11:39:51,565 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:39:51,566 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:39:51,566 INFO    SenderThread:1276703 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-05-05 11:39:51,566 INFO    SenderThread:1276703 [sender.py:transition_state():614] send defer: 4
+2024-05-05 11:39:51,566 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:39:51,566 INFO    HandlerThread:1276703 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-05 11:39:51,566 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:39:51,566 INFO    SenderThread:1276703 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-05-05 11:39:51,566 INFO    SenderThread:1276703 [sender.py:transition_state():614] send defer: 5
+2024-05-05 11:39:51,566 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:39:51,567 INFO    HandlerThread:1276703 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-05 11:39:51,567 DEBUG   SenderThread:1276703 [sender.py:send():379] send: summary
+2024-05-05 11:39:51,567 INFO    SenderThread:1276703 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-05 11:39:51,568 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:39:51,568 INFO    SenderThread:1276703 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-05-05 11:39:51,568 INFO    SenderThread:1276703 [sender.py:transition_state():614] send defer: 6
+2024-05-05 11:39:51,568 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:39:51,568 INFO    HandlerThread:1276703 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-05 11:39:51,568 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:39:51,568 INFO    SenderThread:1276703 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-05-05 11:39:51,573 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:39:51,998 INFO    SenderThread:1276703 [sender.py:transition_state():614] send defer: 7
+2024-05-05 11:39:51,998 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:39:51,998 INFO    HandlerThread:1276703 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-05 11:39:51,998 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:39:51,998 INFO    SenderThread:1276703 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-05-05 11:39:52,068 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:39:52,097 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/config.yaml
+2024-05-05 11:39:52,097 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/wandb-summary.json
+2024-05-05 11:39:55,401 INFO    SenderThread:1276703 [sender.py:transition_state():614] send defer: 8
+2024-05-05 11:39:55,401 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:39:55,401 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:39:55,401 INFO    HandlerThread:1276703 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-05 11:39:55,402 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:39:55,402 INFO    SenderThread:1276703 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-05-05 11:39:55,402 INFO    SenderThread:1276703 [job_builder.py:build():318] Attempting to build job artifact
+2024-05-05 11:39:55,403 INFO    SenderThread:1276703 [job_builder.py:_get_source_type():466] no source found
+2024-05-05 11:39:55,403 INFO    SenderThread:1276703 [sender.py:transition_state():614] send defer: 9
+2024-05-05 11:39:55,404 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:39:55,404 INFO    HandlerThread:1276703 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-05 11:39:55,404 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:39:55,404 INFO    SenderThread:1276703 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-05-05 11:39:55,404 INFO    SenderThread:1276703 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-05 11:39:56,070 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:39:56,098 INFO    Thread-12 :1276703 [dir_watcher.py:_on_file_modified():288] file/dir modified: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:56,098 INFO    SenderThread:1276703 [dir_watcher.py:finish():388] scan: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files
+2024-05-05 11:39:56,098 INFO    SenderThread:1276703 [dir_watcher.py:finish():402] scan save: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log output.log
+2024-05-05 11:39:56,098 INFO    SenderThread:1276703 [dir_watcher.py:finish():402] scan save: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/requirements.txt requirements.txt
+2024-05-05 11:39:56,099 INFO    SenderThread:1276703 [dir_watcher.py:finish():402] scan save: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/conda-environment.yaml conda-environment.yaml
+2024-05-05 11:39:56,101 INFO    SenderThread:1276703 [dir_watcher.py:finish():402] scan save: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/config.yaml config.yaml
+2024-05-05 11:39:56,101 INFO    SenderThread:1276703 [dir_watcher.py:finish():402] scan save: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/wandb-metadata.json wandb-metadata.json
+2024-05-05 11:39:56,104 INFO    SenderThread:1276703 [dir_watcher.py:finish():402] scan save: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/wandb-summary.json wandb-summary.json
+2024-05-05 11:39:56,110 INFO    SenderThread:1276703 [sender.py:transition_state():614] send defer: 10
+2024-05-05 11:39:56,111 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:39:56,113 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:39:56,116 INFO    HandlerThread:1276703 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-05 11:39:56,116 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:39:56,116 INFO    SenderThread:1276703 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-05-05 11:39:56,116 INFO    SenderThread:1276703 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-05 11:39:57,071 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:39:57,071 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:39:57,072 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: status_report
+2024-05-05 11:39:57,591 INFO    wandb-upload_0:1276703 [upload_job.py:push():131] Uploaded file /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/output.log
+2024-05-05 11:39:58,072 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:39:58,072 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:39:58,347 INFO    wandb-upload_2:1276703 [upload_job.py:push():131] Uploaded file /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/conda-environment.yaml
+2024-05-05 11:39:58,352 INFO    wandb-upload_4:1276703 [upload_job.py:push():131] Uploaded file /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/wandb-summary.json
+2024-05-05 11:39:58,353 INFO    wandb-upload_3:1276703 [upload_job.py:push():131] Uploaded file /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/config.yaml
+2024-05-05 11:39:58,425 INFO    wandb-upload_1:1276703 [upload_job.py:push():131] Uploaded file /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/files/requirements.txt
+2024-05-05 11:39:58,625 INFO    Thread-11 :1276703 [sender.py:transition_state():614] send defer: 11
+2024-05-05 11:39:58,626 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:39:58,626 INFO    HandlerThread:1276703 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-05 11:39:58,626 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:39:58,626 INFO    SenderThread:1276703 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-05-05 11:39:58,626 INFO    SenderThread:1276703 [file_pusher.py:join():178] waiting for file pusher
+2024-05-05 11:39:58,627 INFO    SenderThread:1276703 [sender.py:transition_state():614] send defer: 12
+2024-05-05 11:39:58,627 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:39:58,627 INFO    HandlerThread:1276703 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-05 11:39:58,627 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:39:58,627 INFO    SenderThread:1276703 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-05-05 11:39:58,627 INFO    SenderThread:1276703 [file_stream.py:finish():614] file stream finish called
+2024-05-05 11:39:59,072 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:39:59,076 INFO    SenderThread:1276703 [file_stream.py:finish():618] file stream finish is done
+2024-05-05 11:39:59,076 INFO    SenderThread:1276703 [sender.py:transition_state():614] send defer: 13
+2024-05-05 11:39:59,076 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:39:59,076 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:39:59,076 INFO    HandlerThread:1276703 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-05 11:39:59,076 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:39:59,077 INFO    SenderThread:1276703 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-05-05 11:39:59,077 INFO    SenderThread:1276703 [sender.py:transition_state():614] send defer: 14
+2024-05-05 11:39:59,077 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: defer
+2024-05-05 11:39:59,077 DEBUG   SenderThread:1276703 [sender.py:send():379] send: final
+2024-05-05 11:39:59,077 INFO    HandlerThread:1276703 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-05 11:39:59,077 DEBUG   SenderThread:1276703 [sender.py:send():379] send: footer
+2024-05-05 11:39:59,078 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: defer
+2024-05-05 11:39:59,078 INFO    SenderThread:1276703 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-05-05 11:39:59,078 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:39:59,078 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:39:59,079 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-05 11:39:59,079 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: poll_exit
+2024-05-05 11:39:59,079 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: server_info
+2024-05-05 11:39:59,079 DEBUG   SenderThread:1276703 [sender.py:send_request():406] send_request: server_info
+2024-05-05 11:39:59,080 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-05 11:39:59,082 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-05 11:39:59,083 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-05 11:39:59,317 INFO    MainThread:1276703 [wandb_run.py:_footer_history_summary_info():3920] rendering history
+2024-05-05 11:39:59,317 INFO    MainThread:1276703 [wandb_run.py:_footer_history_summary_info():3952] rendering summary
+2024-05-05 11:39:59,318 INFO    MainThread:1276703 [wandb_run.py:_footer_sync_info():3879] logging synced files
+2024-05-05 11:39:59,318 DEBUG   HandlerThread:1276703 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-05 11:39:59,318 INFO    HandlerThread:1276703 [handler.py:finish():866] shutting down handler
+2024-05-05 11:40:00,080 INFO    WriterThread:1276703 [datastore.py:close():296] close: /data/kongrui/hate_speech_classification/wandb/run-20240505_113706-pepl8n0h/run-pepl8n0h.wandb
+2024-05-05 11:40:00,317 INFO    SenderThread:1276703 [sender.py:finish():1546] shutting down sender
+2024-05-05 11:40:00,317 INFO    SenderThread:1276703 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-05 11:40:00,317 INFO    SenderThread:1276703 [file_pusher.py:join():178] waiting for file pusher
