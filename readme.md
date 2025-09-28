@@ -34,13 +34,13 @@ Then run code and open Public URL:
 
 You should upload the folder (hate_speech_classification) which include all the file needed to the colab - MyDrive and then open hate_classifier_demo.ipynb
 
-![Image_20240506010410](.\img\Image_20240506010410.png)
+![Image_20240506010410](./img/Image_20240506010410.png)
 
 ### 2.Prepare before run the code
 
 Connect to T4 GPU and then click Mount Google Drive and Follow the instructions to connect to google drive.
 
-![Image_20240506010702](.\img\Image_20240506010702.png)
+![Image_20240506010702](./img/Image_20240506010702.png)
 
 Run the following code to enter the correct running path
 
@@ -52,13 +52,13 @@ cd /content/drive/MyDrive/hate_speech_classification
 
 During training process of the Bert model, the command shell will prompt you to register wandb account for logging training information: 
 
-![Image_20240506014409](.\img\Image_20240506014409.png)
+![Image_20240506014409](./img/Image_20240506014409.png)
 
 You should use input “1” and create your W&B account and input your account API key.
 
-![Image_20240506014446](.\img\Image_20240506014446.png)
+![Image_20240506014446](./img/Image_20240506014446.png)
 
-![Image_20240506014509](.\img\Image_20240506014509.png)
+![Image_20240506014509](./img/Image_20240506014509.png)
 
 After you finish the W&B API key, the training process and logging program will automatically run. Finally, the trained Bert model will be evaluated and deployed for further usage. 
 
