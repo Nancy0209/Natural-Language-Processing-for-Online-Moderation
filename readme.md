@@ -40,7 +40,7 @@ You should upload the folder (hate_speech_classification) which include all the 
 
 Connect to T4 GPU and then click Mount Google Drive and Follow the instructions to connect to google drive.
 
-![Image_20240506010702](.\img\Image_20240506010702.png)
+!img/[Image_20240506010702](.\img\Image_20240506010702.png)
 
 Run the following code to enter the correct running path
 
